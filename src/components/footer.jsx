@@ -1,5 +1,5 @@
 import { Box } from "@mui/material"; // Correct Box import
-import { Link } from 'react-router-dom'; // Use Link from react-router-dom
+import { Link } from "react-router-dom"; // Use Link from react-router-dom
 import React from "react";
 
 function Footer() {
@@ -15,13 +15,14 @@ function Footer() {
       <Box
         sx={{
           display: "flex",
-          gap: "80px",
-          textAlign: "initial",
+          justifyContent: "space-between", // Ensures the items are spread across
+          alignItems: "flex-start", // Aligns the items vertically at the top
           color: "white",
           fontWeight: 200,
           padding: "80px 100px",
         }}
       >
+        {/* Left Content */}
         <Box
           sx={{
             display: "grid",
@@ -36,7 +37,6 @@ function Footer() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              
               color: "white",
             }}
           >
@@ -65,6 +65,8 @@ function Footer() {
             </ul>
           </Box>
         </Box>
+
+        {/* Right Content */}
         <Box
           sx={{
             display: "grid",
@@ -107,6 +109,55 @@ function Footer() {
                 </Link>
               </li>
             </ul>
+          </Box>
+        </Box>
+
+        {/* Social Media Icons */}
+        <Box
+          sx={{
+            display: "flex",
+            gap: "20px",
+            alignItems: "center",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "60px",
+              height: "60px",
+              backgroundColor: "white",
+              borderRadius: "50%",
+            }}
+          >
+            {/* Placeholder for Social Media Icon */}
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "60px",
+              height: "60px",
+              backgroundColor: "white",
+              borderRadius: "50%",
+            }}
+          >
+            {/* Placeholder for Social Media Icon */}
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "60px",
+              height: "60px",
+              backgroundColor: "white",
+              borderRadius: "50%",
+            }}
+          >
+            {/* Placeholder for Social Media Icon */}
           </Box>
         </Box>
       </Box>
